@@ -1,7 +1,9 @@
 📘 Gender Classification using ResNet18 (PyTorch)
+
 This project implements a binary gender classification model using PyTorch and a fine-tuned ResNet18 architecture. The model is trained on a labeled image dataset of faces and classifies each face as Male or Female. It supports inference on custom images with an interactive upload-and-predict loop, and includes model checkpointing, early stopping, and data augmentation.
 ____________________________________________________________
 🧠 Model Overview
+
 Backbone: ResNet18 (pretrained optional)
 
 Final Layer: Replaced with a fully connected layer with 2 output nodes
