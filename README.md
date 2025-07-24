@@ -1,8 +1,8 @@
-📘 Gender Classification using ResNet18 (PyTorch)
+### 📘 Gender Classification using ResNet18 (PyTorch)
 
 This project implements a binary gender classification model using PyTorch and a fine-tuned ResNet18 architecture. The model is trained on a labeled image dataset of faces and classifies each face as Male or Female. It supports inference on custom images with an interactive upload-and-predict loop, and includes model checkpointing, early stopping, and data augmentation.
 ____________________________________________________________
-🧠 Model Overview
+### 🧠 Model Overview
 
 Backbone: ResNet18 (pretrained optional)
 
@@ -24,21 +24,8 @@ Input Shape: 224x224 RGB images
 
 Output: Binary classification — 'Female' or 'Male'
 ____________________________________________________________
+### 🧪 Features
 
-📂 Project Structure
-bash
-Copy
-Edit
-gender-classification/
-│
-├── resnet18_gender_classification.pth   # Trained model weights
-├── gender_classification.ipynb          # Full training + inference notebook
-├── dataset/                             # (Optional) Your dataset folder
-└── README.md                            # You're here
-____________________________________________________________
-
-
-🧪 Features
 ✅ ResNet18 fine-tuned for binary gender classification
 
 ✅ Custom data preprocessing and augmentations
@@ -50,7 +37,7 @@ ____________________________________________________________
 ✅ Model saving and reloading for inference
 ____________________________________________________________
 
-📊 Training Summary
+### 📊 Training Summary
 Metric	Value
 Epochs	30 (Early stopped)
 Batch Size	64
@@ -65,7 +52,16 @@ Use Google Colab for faster training (GPU).
 
 You can extend this model to multi-class classification or fine-grained attributes.
 
-📁 Sample Dataset Structure
+#### Dataset
+
+This project uses the [Gender Classification Dataset](https://www.kaggle.com/datasets/cashutosh/gender-classification-dataset) provided by Cashutosh on Kaggle.
+
+- The dataset consists of facial images categorized as either `male` or `female`.
+- It is intended for educational and research purposes.
+- All rights belong to the original creator. Please refer to the Kaggle page for licensing and usage details.
+
+
+### 📁 Sample Dataset Structure
 dataset/
 ├── train/
 │   ├── female/
